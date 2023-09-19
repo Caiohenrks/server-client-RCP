@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "d646f42e-2040-4cbb-b8df-4f6de2685436",
+		"name": "RPC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17052279"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\"?>\r\n<methodCall>\r\n    <methodName>is_palindrome</methodName>\r\n    <params>\r\n        <param>\r\n            <value><string>radar</string></value>\r\n        </param>\r\n    </params>\r\n</methodCall>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
